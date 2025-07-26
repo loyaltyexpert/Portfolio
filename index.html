@@ -3,152 +3,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AbdAzeez Loyalty Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
-      color: #fff;
+    }
+    body {
       background-color: #2A2E34;
+      color: #fff;
+      line-height: 1.6;
     }
     header {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/header-bg.jpg') center/cover no-repeat;
+      background: url('background.jpg') center/cover no-repeat;
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 80px 20px;
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
     }
-    header p {
-      font-size: 1.2rem;
+    header div {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
     }
     section {
-      padding: 60px 20px;
+      padding: 4rem 2rem;
     }
-    .light-grey {
-      background-color: #D3D3D3;
-      color: #000;
-    }
-    .amber {
-      color: #FFBF00;
-    }
-    .service-section {
-      background-color: #383F46;
-    }
-    .testimonials, .sales-proof {
-      background-color: #D3D3D3;
-      color: #000;
-    }
-    video {
-      max-width: 100%;
-      height: auto;
+    .lightgrey { background-color: lightgrey; color: #000; }
+    .custom { background-color: transparent; color: #fff; }
+    .amber { color: #FFBF00; }
+    .services { background-color: #383F46; }
+    .footer { background-color: #B4690F; padding: 2rem; text-align: center; }
+    h1, h2, h3 { margin-bottom: 1rem; }
+    p { margin-bottom: 1rem; }
+    .contact-form input, .contact-form textarea {
       display: block;
-      margin: 20px auto;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
     }
-    .footer {
-      background-color: #B4690F;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    .footer a, .footer p {
-      color: #fff;
-      text-decoration: none;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 400px;
-      margin: auto;
-    }
-    input, textarea, button {
-      margin: 10px 0;
-      padding: 10px;
-      font-size: 1rem;
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
     }
   </style>
 </head>
 <body>
+  <header>
+    <div>
+      <h1>WELCOME TO MY PORTFOLIO</h1>
+      <p>I'm AbdAzeez Loyalty, an eCommerce expert dedicated to driving success through tailored strategies and seamless digital experiences. Explore my work, and let’s connect to elevate your online business.</p>
+    </div>
+  </header>
 
-<header>
-  <h1>WELCOME TO MY PORTFOLIO</h1>
-  <p>I'm AbdAzeez loyalty, an eCommerce expert dedicated to driving success through tailored strategies and seamless digital experiences. Explore my work, and let’s connect to elevate your online business.</p>
-</header>
+  <section class="lightgrey">
+    <h2>About Us</h2>
+    <p>My name is AbdAzeez Loyalty, An Ecommerce Growth Strategist & Expert. I specialize in helping store owners across leading platforms such as Shopify, WordPress, and more. With a deep understanding of the digital landscape, I provide comprehensive, results-oriented solutions for sustainable growth and success. I also work in partnerships and get paid on commission.</p>
+    <p>My expertise includes SEO, optimized funnels, email marketing (Klaviyo), website design, and more. Using data-driven insights and best practices, I help brands boost online presence and revenue. I work closely with clients to meet business goals and elevate performance.</p>
+  </section>
 
-<section class="light-grey">
-  <h2>About Us</h2>
-  <p>My name is AbdAzeez loyalty, An Ecommerce Growth Strategist & Expert...</p>
-</section>
+  <section class="custom">
+    <h2>Past Projects</h2>
+    <h3>Technical SEO</h3>
+    <img src="technical-seo.jpg" alt="Technical SEO" width="100%">
+    <h3>Schema</h3>
+    <img src="schema.jpg" alt="Schema" width="100%">
+    <h3>Site Ownership</h3>
+    <img src="site-ownership.jpg" alt="Site Ownership" width="100%">
+    <h3>Search Console Insight</h3>
+    <video src="console-insight.mp4" width="100%" controls></video>
+  </section>
 
-<section>
-  <h2>Technical SEO</h2>
-  <img src="images/technical-seo.jpg" alt="Technical SEO" width="100%" />
-  <h2>Schema</h2>
-  <img src="images/schema.jpg" alt="Schema" width="100%" />
-  <h2>Site Ownership</h2>
-  <img src="images/site-ownership.jpg" alt="Site Ownership" width="100%" />
-  <h2>Search Console Insight</h2>
-  <video controls>
-    <source src="videos/search-console.mp4" type="video/mp4" />
-  </video>
-</section>
+  <section class="services">
+    <h2>Our Services</h2>
+    <h3>SEO</h3>
+    <p>SEO helps your store rank higher in search engine results, allowing potential customers to find your products easily. Without SEO, you're missing key traffic and sales.</p>
 
-<section class="service-section">
-  <h2 class="amber">OUR SERVICES</h2>
-  <h3>SEO</h3>
-  <p>SEO is all about optimizing your store...</p>
-  <h3>Email Marketing</h3>
-  <p>Email marketing is a powerful channel...</p>
-  <h3>Store Design</h3>
-  <p>An effective store design goes beyond just looking good...</p>
-  <h3>Virtual Assistant</h3>
-  <p>Handling customer inquiries promptly and professionally...</p>
-  <h3>SEM</h3>
-  <p>The beauty of SEM is that it allows for targeted visibility...</p>
-</section>
+    <h3>Email Marketing</h3>
+    <p>Email marketing keeps you connected with customers through personalized offers, updates, and promotions. Unlike social media, emails go straight to inboxes for direct impact.</p>
 
-<section class="testimonials">
-  <h2>Customer Testimonials</h2>
-  <img src="images/customer1.jpg" alt="Customer 1" />
-  <p>Testimonial text 1...</p>
-  <img src="images/customer2.jpg" alt="Customer 2" />
-  <p>Testimonial text 2...</p>
-  <img src="images/customer3.jpg" alt="Customer 3" />
-  <p>Testimonial text 3...</p>
-  <img src="images/customer4.jpg" alt="Customer 4" />
-  <p>Testimonial text 4...</p>
-  <img src="images/customer5.jpg" alt="Customer 5" />
-  <p>Testimonial text 5...</p>
-</section>
+    <h3>Store Design</h3>
+    <p>A good store design is functional and visually appealing. Smooth navigation, clear categories, intuitive search, and structured pages improve conversions and customer experience.</p>
 
-<section class="sales-proof">
-  <h2>Sales Proof</h2>
-  <video controls>
-    <source src="videos/sales1.mp4" type="video/mp4" />
-  </video>
-  <video controls>
-    <source src="videos/sales2.mp4" type="video/mp4" />
-  </video>
-</section>
+    <h3>Virtual Assistant</h3>
+    <p>A VA manages customer inquiries, emails, and live chat to maintain brand trust and improve customer satisfaction—key to long-term growth.</p>
 
-<section class="light-grey">
-  <h2>Contact Us</h2>
-  <p>Feel free to reach out for any questions ⁉️</p>
-  <form action="mailto:loyaltyecommerceexpert@gmail.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send</button>
-  </form>
-</section>
+    <h3>SEM</h3>
+    <p>SEM offers targeted visibility. Google Ads helps reach interested customers by search intent and demographics. When done right, SEM gives high ROI.</p>
+  </section>
 
-<footer class="footer">
-  <p>📞 +2347051049696 | ✉️ loyaltyecommerceexpert@gmail.com</p>
-  <p><a href="https://wa.me/2347073025887" target="_blank">WhatsApp</a></p>
-  <p>Proudly created by Loyalty Expert</p>
-</footer>
+  <section class="lightgrey">
+    <h2>Customer Testimonials</h2>
+    <div><img src="cust1.jpg" alt="Customer 1" width="100%"><p>Testimonial 1</p></div>
+    <div><img src="cust2.jpg" alt="Customer 2" width="100%"><p>Testimonial 2</p></div>
+    <div><img src="cust3.jpg" alt="Customer 3" width="100%"><p>Testimonial 3</p></div>
+    <div><img src="cust4.jpg" alt="Customer 4" width="100%"><p>Testimonial 4</p></div>
+    <div><img src="cust5.jpg" alt="Customer 5" width="100%"><p>Testimonial 5</p></div>
+  </section>
 
+  <section class="custom">
+    <h2>Sales Proof</h2>
+    <video src="sales1.mp4" width="100%" controls></video>
+    <video src="sales2.mp4" width="100%" controls></video>
+  </section>
+
+  <section class="lightgrey">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out for any questions ⁉️</p>
+    <form class="contact-form" action="mailto:loyaltyecommerceexpert@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 AbdAzeez Loyalty | Email: loyaltyecommerceexpert@gmail.com</p>
+    <p><span>&#x260E;</span> +2347051049696</p>
+    <div class="social-icons">
+      <a href="https://wa.me/2347073025887" target="_blank">WhatsApp</a>
+    </div>
+    <p>Proudly created by Loyalty Expert</p>
+  </footer>
 </body>
 </html>
