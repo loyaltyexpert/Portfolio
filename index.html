@@ -1,84 +1,154 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Loyalty Ecommerce Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AbdAzeez Loyalty Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background-color: #2A2E34;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/header-bg.jpg') center/cover no-repeat;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .light-grey {
+      background-color: #D3D3D3;
+      color: #000;
+    }
+    .amber {
+      color: #FFBF00;
+    }
+    .service-section {
+      background-color: #383F46;
+    }
+    .testimonials, .sales-proof {
+      background-color: #D3D3D3;
+      color: #000;
+    }
+    video {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+    .footer {
+      background-color: #B4690F;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .footer a, .footer p {
+      color: #fff;
+      text-decoration: none;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, textarea, button {
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <header class="hero">
-        <div class="overlay">
-            <h1>Welcome to Loyalty Ecommerce Solutions</h1>
-            <p>Your Trusted Store Developer & Strategist</p>
-        </div>
-    </header>
 
-    <section class="about" id="about">
-        <h2>About Us</h2>
-        <p>We provide top-notch ecommerce solutions including SEO, store setup, email marketing, and ongoing support to help grow your business.</p>
-    </section>
+<header>
+  <h1>WELCOME TO MY PORTFOLIO</h1>
+  <p>I'm AbdAzeez loyalty, an eCommerce expert dedicated to driving success through tailored strategies and seamless digital experiences. Explore my work, and let’s connect to elevate your online business.</p>
+</header>
 
-    <section class="projects" id="projects">
-        <h2>Past Projects</h2>
-        <div class="project">
-            <img src="images/project1.jpg" alt="Project 1">
-            <img src="images/project2.jpg" alt="Project 2">
-            <video controls>
-                <source src="videos/searchconsole.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
+<section class="light-grey">
+  <h2>About Us</h2>
+  <p>My name is AbdAzeez loyalty, An Ecommerce Growth Strategist & Expert...</p>
+</section>
 
-    <section class="services" id="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <h3>SEO</h3>
-            <p>SEO is all about optimizing your store so that it ranks higher in search engine results...</p>
-            <h3>Email Marketing</h3>
-            <p>Email marketing is a powerful channel for staying connected with your customers...</p>
-            <h3>Store Design</h3>
-            <p>An effective store design goes beyond just looking good...</p>
-            <h3>Virtual Assistant</h3>
-            <p>Handling customer inquiries promptly and professionally is critical...</p>
-            <h3>SEM</h3>
-            <p>SEM allows for targeted visibility through tools like Google Ads...</p>
-        </div>
-    </section>
+<section>
+  <h2>Technical SEO</h2>
+  <img src="images/technical-seo.jpg" alt="Technical SEO" width="100%" />
+  <h2>Schema</h2>
+  <img src="images/schema.jpg" alt="Schema" width="100%" />
+  <h2>Site Ownership</h2>
+  <img src="images/site-ownership.jpg" alt="Site Ownership" width="100%" />
+  <h2>Search Console Insight</h2>
+  <video controls>
+    <source src="videos/search-console.mp4" type="video/mp4" />
+  </video>
+</section>
 
-    <section class="testimonials" id="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonial">
-            <img src="images/client1.jpg" alt="Client 1">
-            <video controls>
-                <source src="videos/salesproof1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
+<section class="service-section">
+  <h2 class="amber">OUR SERVICES</h2>
+  <h3>SEO</h3>
+  <p>SEO is all about optimizing your store...</p>
+  <h3>Email Marketing</h3>
+  <p>Email marketing is a powerful channel...</p>
+  <h3>Store Design</h3>
+  <p>An effective store design goes beyond just looking good...</p>
+  <h3>Virtual Assistant</h3>
+  <p>Handling customer inquiries promptly and professionally...</p>
+  <h3>SEM</h3>
+  <p>The beauty of SEM is that it allows for targeted visibility...</p>
+</section>
 
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>Kindly let me know if you have any question!!!</p>
-        <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p>Email: loyaltyecommercedeveloper@gmail.com</p>
-        <p>WhatsApp: <a href="https://wa.me/2347073025887" target="_blank">+2347073025887</a></p>
-    </section>
+<section class="testimonials">
+  <h2>Customer Testimonials</h2>
+  <img src="images/customer1.jpg" alt="Customer 1" />
+  <p>Testimonial text 1...</p>
+  <img src="images/customer2.jpg" alt="Customer 2" />
+  <p>Testimonial text 2...</p>
+  <img src="images/customer3.jpg" alt="Customer 3" />
+  <p>Testimonial text 3...</p>
+  <img src="images/customer4.jpg" alt="Customer 4" />
+  <p>Testimonial text 4...</p>
+  <img src="images/customer5.jpg" alt="Customer 5" />
+  <p>Testimonial text 5...</p>
+</section>
 
-    <footer>
-        <p>📞 +2347051049696 | loyaltyecommercedeveloper@gmail.com</p>
-        <p>
-            <a href="https://facebook.com" target="_blank">Facebook</a> | 
-            <a href="https://wa.me/2347073025887" target="_blank">WhatsApp</a>
-        </p>
-        <p>Proudly created with Loyalty Expert</p>
-    </footer>
+<section class="sales-proof">
+  <h2>Sales Proof</h2>
+  <video controls>
+    <source src="videos/sales1.mp4" type="video/mp4" />
+  </video>
+  <video controls>
+    <source src="videos/sales2.mp4" type="video/mp4" />
+  </video>
+</section>
+
+<section class="light-grey">
+  <h2>Contact Us</h2>
+  <p>Feel free to reach out for any questions ⁉️</p>
+  <form action="mailto:loyaltyecommerceexpert@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <p>📞 +2347051049696 | ✉️ loyaltyecommerceexpert@gmail.com</p>
+  <p><a href="https://wa.me/2347073025887" target="_blank">WhatsApp</a></p>
+  <p>Proudly created by Loyalty Expert</p>
+</footer>
+
 </body>
 </html>
