@@ -31,8 +31,12 @@ body {
     color: white;
     padding: 40px 20px;
 }
-.contact {
-    padding: 80px 40px;
+..contact-form {
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
 }
 footer {
     background-color: #b4690f;
